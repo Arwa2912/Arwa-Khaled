@@ -1,0 +1,321 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e7d8c9; /* Soft beige background */
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Container for centralizing content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background-color: #b2967d; /* Light brown */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    transform: translateY(-100px);
+    animation: slideIn 1s ease-out forwards;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transform: scale(0);
+    animation: scaleIn 1s ease-in-out 0.5s forwards;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1.2s forwards;
+}
+
+/* Fade-in animation for elements */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Slide-in header effect */
+@keyframes slideIn {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+/* Image scaling effect */
+@keyframes scaleIn {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+/* About Section */
+.about {
+    background-color: #e6beae; /* Light peach */
+    padding: 50px 0;
+    text-align: center;
+    animation: slideUp 1s ease-out 0.5s forwards;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+.about p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #b2967d; /* Light brown */
+    color: white;
+    animation: slideUp 1s ease-out 1s forwards;
+}
+
+.skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center;
+    gap: 20px; /* Add gap between skills */
+    padding-top: 20px;
+}
+
+.skills li {
+    background-color: #e7d8c9; /* Soft beige */
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    min-width: 150px; /* Minimum width for each skill */
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.skills li:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.skills li:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.skills li:nth-child(3) {
+    animation-delay: 1.4s;
+}
+
+.skills li:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+.skills li:nth-child(5) {
+    animation-delay: 1.8s;
+}
+
+.skills li:nth-child(6) {
+    animation-delay: 2s;
+}
+
+.skills li:nth-child(7) {
+    animation-delay: 2.2s;
+}
+
+.skills li:nth-child(8) {
+    animation-delay: 2.4s;
+}
+
+.skills li:nth-child(9) {
+    animation-delay: 2.6s;
+}
+
+.skills li:nth-child(10) {
+    animation-delay: 2.8s;
+}
+
+.skills li:nth-child(11) {
+    animation-delay: 3s;
+}
+
+.skills li:nth-child(12) {
+    animation-delay: 3.2s;
+}
+
+.skills li:nth-child(13) {
+    animation-delay: 3.4s;
+}
+
+.skills li:nth-child(14) {
+    animation-delay: 3.6s;
+}
+
+.skills li:nth-child(15) {
+    animation-delay: 3.8s;
+}
+
+.skills li:nth-child(16) {
+    animation-delay: 4s;
+}
+
+.skills li:nth-child(17) {
+    animation-delay: 4.2s;
+}
+
+.skills li:nth-child(18) {
+    animation-delay: 4.4s;
+}
+
+.skills li:nth-child(19) {
+    animation-delay: 4.6s;
+}
+
+/* Fade-up animation for skills */
+@keyframes fadeInUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Fade-up animation for skills */
+@keyframes fadeInUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+    background-color: #e6beae; /* Light peach */
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+.project-card p {
+    font-size: 1.2em;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1.2s forwards;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:nth-child(1) {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.project-card:nth-child(2) {
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+/* CV Section */
+.cv {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #b2967d; /* Light brown */
+    color: white;
+}
+
+.cv-link {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e7d8c9; /* Soft beige */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-link:hover {
+    background-color: #e6beae; /* Light peach */
+}
+
+/* Footer Section */
+footer {
+    background-color: #b2967d; /* Light brown */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Animation for footer text */
+footer p {
+    font-size: 1.1em;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+footer p {
+    animation-delay: 1s;
+}
